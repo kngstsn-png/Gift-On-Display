@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gifts On Display: Branding Your Music | Winner Chinonso Emmanuel</title>
+<meta name="description" content="Gifts On Display: Branding Your Music is a guide to help you brand yourself, stand out, and use your gift to bless others. By Winner Chinonso Emmanuel.">
+<meta property="og:title" content="Gifts On Display: Branding Your Music">
+<meta property="og:description" content="A guide for talented artists and creatives who want their gifts to be heard and stand out.">
+<meta property="og:image" content="book.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sky: #e0f2ff;
+    --sky-soft: #f2f9ff;
+    --blue: #1a8bb8;
+    --blue-deep: #0f6a91;
+    --ink: #15384b;
+    --muted: #4d6b7c;
+    --white: #ffffff;
+    --radius: 24px;
+    --radius-sm: 14px;
+    --glow: 0 0 0 1px rgba(26,139,184,.08), 0 20px 60px rgba(26,139,184,.28), 0 0 120px rgba(120,200,240,.45);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--white);
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: var(--blue-deep); }
+
+  :focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; border-radius: 6px; }
+
+  .wrap { width: min(1080px, 100% - 2.5rem); margin-inline: auto; }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: .6rem;
+    font-family: inherit; font-weight: 700; font-size: 1rem; letter-spacing: .04em;
+    text-decoration: none; text-align: center;
+    color: var(--white);
+    background: linear-gradient(135deg, var(--blue) 0%, var(--blue-deep) 100%);
+    border: 0; border-radius: 999px;
+    padding: 1rem 2rem; min-height: 54px;
+    cursor: pointer;
+    box-shadow: 0 10px 28px rgba(26,139,184,.35);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 14px 34px rgba(26,139,184,.45); }
+  .btn:active { transform: translateY(0); }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    background:
+      radial-gradient(ellipse 80% 55% at 50% 38%, rgba(255,255,255,.95) 0%, rgba(255,255,255,0) 70%),
+      linear-gradient(180deg, var(--sky) 0%, #f4faff 65%, var(--white) 100%);
+    padding: 3.5rem 0 4.5rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .hero-book {
+    position: relative;
+    width: min(760px, 100%);
+    margin: 0 auto 2.75rem;
+  }
+  .hero-book::before {
+    content: "";
+    position: absolute; inset: 8% 6%;
+    background: radial-gradient(closest-side, rgba(26,139,184,.42), rgba(120,200,240,.22) 60%, rgba(255,255,255,0) 100%);
+    filter: blur(40px);
+    z-index: 0;
+  }
+  .hero-book img {
+    position: relative; z-index: 1;
+    width: 100%; height: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--glow);
+  }
+  .badge {
+    display: inline-block;
+    background: var(--blue);
+    color: var(--white);
+    font-weight: 600;
+    font-size: .9rem;
+    letter-spacing: .16em;
+    padding: .55rem 1.5rem;
+    border-radius: 999px;
+    margin-bottom: 1.1rem;
+  }
+  h1 {
+    margin: 0 0 1rem;
+    font-size: clamp(2.6rem, 9vw, 5rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -.02em;
+    color: var(--blue-deep);
+  }
+  .subtitle {
+    max-width: 34rem;
+    margin: 0 auto 2rem;
+    font-size: clamp(1.05rem, 2.6vw, 1.25rem);
+    color: var(--muted);
+  }
+  .author-line { margin-top: 1.25rem; font-size: .95rem; color: var(--muted); }
+  .author-line strong { color: var(--ink); }
+
+  /* ---------- Sections ---------- */
+  section { padding: 4.5rem 0; }
+  h2 {
+    margin: 0 0 1.25rem;
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--blue-deep);
+  }
+
+  .about-book { background: var(--white); }
+  .about-book .wrap { max-width: 760px; text-align: center; }
+  .about-book p { font-size: 1.1rem; color: var(--muted); margin: 0 0 1.25rem; }
+  .pull {
+    margin-top: 2rem;
+    padding: 1.75rem 1.5rem;
+    background: var(--sky);
+    border-radius: var(--radius);
+    font-size: clamp(1.15rem, 3vw, 1.45rem);
+    font-weight: 600;
+    color: var(--blue-deep);
+    line-height: 1.5;
+  }
+
+  .about-author { background: linear-gradient(180deg, var(--sky) 0%, var(--sky-soft) 100%); }
+  .author-grid {
+    display: grid; gap: 2.5rem; align-items: center;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+  .author-photo {
+    width: min(320px, 78%);
+    aspect-ratio: 3 / 4;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--glow);
+    border: 6px solid var(--white);
+    background: var(--sky);
+  }
+  .author-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+  .author-text p { color: var(--muted); margin: 0 0 1rem; font-size: 1.05rem; }
+  .author-name { font-size: 1.15rem; font-weight: 600; color: var(--ink) !important; }
+  .tribute {
+    background: var(--white);
+    border-left: 5px solid var(--blue);
+    border-radius: var(--radius-sm);
+    padding: 1rem 1.25rem;
+    text-align: left;
+    color: var(--ink) !important;
+    box-shadow: 0 8px 24px rgba(26,139,184,.12);
+  }
+
+  .interest { background: var(--white); }
+  .form-card {
+    max-width: 640px; margin: 0 auto;
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: clamp(1.5rem, 5vw, 2.75rem);
+    box-shadow: 0 0 0 1px rgba(26,139,184,.12), 0 24px 70px rgba(26,139,184,.2);
+  }
+  .form-card h2 { text-align: center; }
+  .form-intro { text-align: center; color: var(--muted); margin: 0 0 1.75rem; }
+  .field { margin-bottom: 1.15rem; }
+  label { display: block; font-weight: 600; font-size: .95rem; margin-bottom: .4rem; color: var(--ink); }
+  input, select, textarea {
+    width: 100%;
+    font-family: inherit; font-size: 1rem; color: var(--ink);
+    background: var(--sky-soft);
+    border: 2px solid transparent;
+    border-radius: var(--radius-sm);
+    padding: .85rem 1rem;
+    transition: border-color .2s ease, background .2s ease;
+  }
+  textarea { min-height: 120px; resize: vertical; }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--blue); background: var(--white); }
+  input:focus-visible, select:focus-visible, textarea:focus-visible { outline: none; }
+  .field.invalid input, .field.invalid select { border-color: #c0392b; }
+  .error { display: none; color: #b03024; font-size: .85rem; margin-top: .35rem; }
+  .field.invalid .error { display: block; }
+  .form-card .btn { width: 100%; margin-top: .5rem; }
+  .note { text-align: center; font-size: .85rem; color: var(--muted); margin: 1rem 0 0; }
+
+  /* ---------- Footer ---------- */
+  footer {
+    background: linear-gradient(135deg, var(--blue) 0%, var(--blue-deep) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 3.5rem 0 2.5rem;
+  }
+  footer h3 { margin: 0 0 .5rem; font-size: 1.4rem; font-weight: 700; }
+  footer p { margin: 0 0 1.5rem; opacity: .95; }
+  .btn-light {
+    background: var(--white); color: var(--blue-deep);
+    box-shadow: 0 10px 28px rgba(0,0,0,.18);
+  }
+  .btn-light:hover { box-shadow: 0 14px 34px rgba(0,0,0,.26); }
+  .copy { margin: 2.25rem 0 0; font-size: .85rem; opacity: .85; }
+
+  /* ---------- Larger screens ---------- */
+  @media (min-width: 820px) {
+    section { padding: 6rem 0; }
+    .hero { padding: 4.5rem 0 6rem; }
+    .author-grid { grid-template-columns: 340px 1fr; gap: 4rem; text-align: left; justify-items: stretch; }
+    .author-photo { width: 100%; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .btn { transition: none; }
+    .btn:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-book">
+      <img src="book.jpg" alt="Front and back cover of the book Gifts On Display: Branding Your Music by Winner Chinonso Emmanuel" width="1080" height="720">
+    </div>
+
+    <span class="badge">BRANDING YOUR MUSIC</span>
+    <h1>Gifts On Display</h1>
+    <p class="subtitle">For all talented artists and creatives who want their gifts be heard and stand out.</p>
+    <a href="#interest" class="btn">GET THE BOOK NOW</a>
+    <p class="author-line">By <strong>Winner Chinonso Emmanuel</strong></p>
+  </div>
+</header>
+
+<main>
+  <!-- ============ ABOUT THE BOOK ============ -->
+  <section class="about-book" id="about-book" aria-labelledby="about-book-title">
+    <div class="wrap">
+      <h2 id="about-book-title">About The Book</h2>
+      <p><strong>Gifts On Display: Branding Your Music</strong> is a guide to help you brand yourself, stand out, and use your gift to bless others.</p>
+      <p>A gift hidden is not helping anyone. Your gift is meant for others.</p>
+      <div class="pull">Let it shine!</div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT THE AUTHOR ============ -->
+  <section class="about-author" id="about-author" aria-labelledby="about-author-title">
+    <div class="wrap author-grid">
+      <div class="author-photo">
+        <img src="author.jpg" alt="Portrait of Winner Chinonso Emmanuel in a white suit and clear-framed glasses" width="756" height="1008" loading="lazy">
+      </div>
+      <div class="author-text">
+        <h2 id="about-author-title">About The Author</h2>
+        <p class="author-name">Winner Chinonso Emmanuel</p>
+        <p>Winner is a talent manager, music producer, and coach from Anambra state, Nigeria. He is passionate about talent development and believes in empowering creatives to bring their gifts to the world.</p>
+        <p class="tribute">This book is dedicated to his dad, who passed on February 20, 2026.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTEREST FORM ============ -->
+  <section class="interest" id="interest" aria-labelledby="interest-title">
+    <div class="wrap">
+      <div class="form-card">
+        <h2 id="interest-title">Interested in PDF or Hard Copy?</h2>
+        <p class="form-intro">Fill in your details and we will continue the conversation on WhatsApp.</p>
+
+        <form id="interest-form" novalidate>
+          <div class="field">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" autocomplete="name" placeholder="Your full name" required>
+            <div class="error">Please enter your full name.</div>
+          </div>
+
+          <div class="field">
+            <label for="phone">WhatsApp Number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="e.g. 08012345678" required>
+            <div class="error">Please enter a valid WhatsApp number.</div>
+          </div>
+
+          <div class="field">
+            <label for="copyType">I want:</label>
+            <select id="copyType" name="copyType" required>
+              <option value="" disabled selected>Choose an option</option>
+              <option value="PDF Copy">PDF Copy</option>
+              <option value="Hard Copy">Hard Copy</option>
+              <option value="Both">Both</option>
+            </select>
+            <div class="error">Please choose PDF Copy, Hard Copy, or Both.</div>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Anything you would like us to know? (optional)"></textarea>
+          </div>
+
+          <button type="submit" class="btn">I'M INTERESTED - CHAT ON WHATSAPP</button>
+          <p class="note">This opens WhatsApp with your message ready to send.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <h3>Have a question?</h3>
+    <p>Chat with Author's PA: <strong>08067677082</strong></p>
+    <a class="btn btn-light" href="https://wa.me/2348067677082" target="_blank" rel="noopener">CHAT ON WHATSAPP</a>
+    <p class="copy">&copy; <span id="year">2026</span> Winner Chinonso Emmanuel. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var WA_NUMBER = '2348067677082';
+    var form = document.getElementById('interest-form');
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function setInvalid(input, isInvalid) {
+      input.closest('.field').classList.toggle('invalid', isInvalid);
+      input.setAttribute('aria-invalid', isInvalid ? 'true' : 'false');
+    }
+
+    // Clear error state as the person corrects a field
+    ['fullName', 'phone', 'copyType'].forEach(function (id) {
+      var el = document.getElementById(id);
+      el.addEventListener('input', function () { setInvalid(el, false); });
+      el.addEventListener('change', function () { setInvalid(el, false); });
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var nameEl = document.getElementById('fullName');
+      var phoneEl = document.getElementById('phone');
+      var typeEl = document.getElementById('copyType');
+      var msgEl = document.getElementById('message');
+
+      var name = nameEl.value.trim();
+      var phone = phoneEl.value.trim();
+      var type = typeEl.value;
+      var message = msgEl.value.trim();
+
+      var phoneDigits = phone.replace(/\D/g, '');
+      var nameOk = name.length > 1;
+      var phoneOk = phoneDigits.length >= 7;
+      var typeOk = type !== '';
+
+      setInvalid(nameEl, !nameOk);
+      setInvalid(phoneEl, !phoneOk);
+      setInvalid(typeEl, !typeOk);
+
+      if (!nameOk) { nameEl.focus(); return; }
+      if (!phoneOk) { phoneEl.focus(); return; }
+      if (!typeOk) { typeEl.focus(); return; }
+
+      var text = 'Hello, I am ' + name +
+        ", I'm interested in " + type +
+        ' of Gifts On Display book. My number is ' + phone + '.';
+      if (message) { text += ' Message: ' + message; }
+
+      var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text);
+      var win = window.open(url, '_blank', 'noopener');
+      if (!win) { window.location.href = url; } // fallback if the new tab is blocked
+    });
+  })();
+</script>
+</body>
+</html>
